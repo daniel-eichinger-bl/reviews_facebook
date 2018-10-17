@@ -1,6 +1,7 @@
 /* By Daniel in 2018 */
 
 const perm_token = 'PUT YOUR TOKEN HERE';
+const page_id = 'PUT PAGE ID HERE';
 const review_maxlength = 600;
 
 function formatDate(date) {
@@ -101,7 +102,7 @@ function appendOverallStarRating(data) {
 }
 
 function show_reviews(nr) {
-    const url = `https://graph.facebook.com/v3.1/134874673226593/?access_token=${perm_token}&debug=all&fields=ratings&format=json&method=get&pretty=0&suppress_http_code=1`;
+    const url = `https://graph.facebook.com/v3.1/${page_id}/?access_token=${perm_token}&debug=all&fields=ratings&format=json&method=get&pretty=0&suppress_http_code=1`;
 
     get_reviews(url).then(function(data) {
         console.log(data);
@@ -118,7 +119,7 @@ function show_reviews(nr) {
 }
 
 async function show50Reviews() {
-    const url = `https://graph.facebook.com/v3.1/134874673226593/?access_token=${perm_token}&debug=all&fields=ratings&format=json&method=get&pretty=0&suppress_http_code=1`;
+    const url = `https://graph.facebook.com/v3.1/${page_id}/?access_token=${perm_token}&debug=all&fields=ratings&format=json&method=get&pretty=0&suppress_http_code=1`;
     let ratings = await get_reviews(url);
     const add_ratings = await get_reviews(ratings.ratings.paging.next);
 
