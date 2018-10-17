@@ -1,0 +1,76 @@
+#reviews p {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.review {
+    padding: 5px 0px;
+}
+
+/* for recommendations, taken from official fb page */
+.sp_KcIon78B9es.sx_5341ff {
+    width: 16px;
+    height: 16px;
+    background-position: -33px -140px;
+}
+
+i.img {
+    -ms-high-contrast-adjust: none;
+}
+
+.sp_KcIon78B9es {
+    background-size: auto;
+    background: url(/reviews_facebook/imgs/rating.png) no-repeat;
+    display: inline-block;
+    height: 72px;
+    width: 72px;
+}
+
+._51mq {
+    margin-right: 3px;
+    vertical-align: -2.9px;
+}
+
+/* For ratings stars */
+.stars {
+    background-image: url(/reviews_facebook/imgs/stars.png);
+    background-size: 81px 138px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    width: 24px;
+}
+
+.five {
+    background-position: -25px -123px;
+}
+
+/* overall rating */
+#overall_rating {
+    background-image: url(/reviews_facebook/imgs/stars.png);
+    background-repeat: no-repeat;
+    background-size: 81px 138px;
+    background-position: 0 0;
+    font-size: 20px;
+    height: 40px;
+    line-height: 43px;
+    padding: 0 0 0 17px;
+    width: 80px;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.lines_rating {
+    line-height: 10px;
+}
+
+.rating_container {
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin-left: 12px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
